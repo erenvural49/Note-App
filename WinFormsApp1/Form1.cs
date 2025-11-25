@@ -2,6 +2,7 @@ namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
+        //asdaskdasdas
         private string currentFilePath = null!;
         private RichTextBox richTextBox1 = null!;
         private RichTextBox richTextBox2 = null!;
@@ -14,8 +15,10 @@ namespace WinFormsApp1
             //windows forms detects user input,richtexbox updates its text,richtexbox automatically calls TextChanged event.
             //
             //"When richTextBox1's text changes, call my richTextBox_TextChanged method"
-            richTextBox1.TextChanged += richTextBox_TextChanged;
+            richTextBox1.TextChanged += RichTextBox_TextChanged;
             richTextBox2.TextChanged += RichTextBox_TextChanged;
+            
+           //ASDASLDKASLASDAS
             
         }
 
@@ -140,7 +143,7 @@ namespace WinFormsApp1
             // and add RichTextBox2 to tabPage2
             tabPage2.Controls.Add(richTextBox2);
         }
-        private void richTextBox_TextChanged(object sender, EventArgs e){
+        private void RichTextBox_TextChanged(object sender, EventArgs e){
             isDirty = true;
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e){
